@@ -1,3 +1,10 @@
+## Cindr
+
+Cindr is a social choose-your-own-adventure game takes the adventurer to their best possible matches based on a series of mythological storyline-questions. Adventurers will meet each other in different places in the game map by requesting to initiate conversation.
+
+Team: Kimberly Zawacki, Darshin Van Parijs, Julia Catalano, Petra Laohakul
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
