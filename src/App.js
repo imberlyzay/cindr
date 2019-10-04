@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import troll from './troll.png'
 import { Splash } from './Splash.js'
+import { Navbar } from './components/navbar';
+import Routes from './routes';
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <header className="App-header">
        <Splash />
       </header>
+      <Navbar />
+      <Routes />
     </div>
   );
 }
