@@ -1,10 +1,18 @@
 import React from 'react';
 import { withRouter, Route, Switch } from 'react-router-dom';
-import TempLink from './components/tempLink';
+import Profile from './components/profile';
+import { MapHistory } from './components/mapHistory';
+import Game from './components/game';
+import { Matches } from './components/matches';
+import { Splash } from './Splash';
 
 const Routes = () => (
   <Switch>
-    <Route path="/temp" component={TempLink} />
+    <Route exact path="/" component={Splash} />
+    <Route path="/profile" component={Profile} />
+    <Route path="/game" component={Game} />
+    <Route path="/map" component={MapHistory} />
+    <Route path="/matches" component={Matches} />
   </Switch>
 );
 
