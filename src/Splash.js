@@ -1,5 +1,7 @@
 import React from 'react';
 import troll from './troll.png';
+import './Splash.css'
+import paperbird from './paper-bird.png'
 import firebase from 'firebase'
 import {firebaseConfig} from './components/Firebase'
 
@@ -51,10 +53,11 @@ const facebookSignin = () => firebase.auth().signInWithPopup(provider).then(func
 export const Splash = () => {
   return (
     <div className="splash-container">
-      <img src={troll} alt="cute troll"></img>
-    <button type='submit' onClick={facebookSignin}>Sign in with FB</button> 
+      {/* <img src={troll} alt="cute troll"></img> */}
+      <img src={paperbird} alt='bird in nest'></img>
+    {/* <button type='submit' onClick={facebookSignin}>Sign in with FB</button>  */}
     {/* <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="true"></div> */}
-      <h1>Cindr</h1>
+      {/* <h1>Cindr</h1> */}
     </div>
   );
 };
