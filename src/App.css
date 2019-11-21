@@ -66,20 +66,24 @@
   padding: 10px;
   text-decoration: none;
   display: flex;
+  justify-content: center;
 }
 
 
 .nav-bar .nav-title {
   color: black;
-  background-color: white;
+  background-color: #a7a7a7;
   /* background-color: #a7a7a7; */
-  box-shadow: inset .09em .09em .1em #d20000, inset -.09em -.09em .1em #d20000;
+  box-shadow: inset .09em .09em .1em white, inset -.09em -.09em .1em white;
+  color: #414855;
   font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .nav-bar a:hover {
-  color: rgb(218, 216, 216);
+  /* color: rgb(218, 216, 216); */
+  background-color: #414855;
+  color: white;
 }
 
 /* Add a color to the active/current link */
@@ -217,46 +221,19 @@
  .container {
   display: flex;
   margin: auto;
-  /* display: grid;
-  grid-template-rows: repeat(3, 50px, [row-start]);
-  grid-template-columns: repeat(4, 50px, [col-start]); */
-  /* border: solid red; */
  }
-
- /* .container img {
-   width: 35%;
-   height: 70%;
-   grid-column-start: 1;
-   grid-column-end: 3;
-   grid-row-start: 1;
-   grid-row-end: 4; */
-   /* padding-bottom: -200px; */
-   /* margin: auto; */
-   /* margin-bottom: -40%;
-   margin-right: -30%; */
-   /* position: absolute; */
- /* } */
-
-
 
 .login-container {
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
   max-width: 45vh;
-  margin: auto;
-  /* margin-top: -300px;
-  margin-left: 100px; */
+
   background-color: #a7a7a7;
   color: white;
-  /* padding: 10px; */
+
   padding-top: 50px;
   padding-bottom: 50px;
   box-shadow: 1px 1px 2px black;
-  /* grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3; */
 }
 
 .login-container form {
@@ -268,7 +245,6 @@
   align-self: flex-start;
   margin: 10px;
   align-self: center;
-  /* align-items: space-between; */
 }
 
 .login-container input {
@@ -281,6 +257,7 @@
 .login-container .button {
   background-color: #414855;
   color: white;
+  margin-top: 10px;
 }
 
 .login-container .button:hover {
@@ -293,4 +270,15 @@
   height: 40%;
   width: 37%;
   padding-bottom: 25px;
+}
+
+.login-container a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  padding-top: 7px;
+}
+
+.login-container a:hover {
+  color: #414855;
 }

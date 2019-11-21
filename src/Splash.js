@@ -14,7 +14,7 @@ export const Splash = () => {
     <div className="splash-container">
       <img src={paperbird} alt='bird in nest'></img>
       <Link to='/login'>Log in</Link>
-      <Link to='/'>Sign Up</Link>
+      <Link to='/signup'>Sign Up</Link>
     </div>
   );
 };
