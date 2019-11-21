@@ -1,9 +1,7 @@
 import React from 'react';
 import { withRouter, Route, Switch } from 'react-router-dom';
 import Profile from './components/profile';
-import { MapHistory } from './components/mapHistory';
-import Game from './components/game';
-import { Matches } from './components/matches';
+import { MapHistory, Game, Matches, LoginForm } from './components/index';
 import { Splash } from './Splash';
 
 const Routes = () => (
@@ -13,6 +11,7 @@ const Routes = () => (
     <Route path="/game" component={Game} />
     <Route path="/map" component={MapHistory} />
     <Route path="/matches" component={Matches} />
+    <Route path='/login' component={LoginForm} />
   </Switch>
 );
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import troll from '../troll128.png';
-// import pirate from '../../public/pirate.png';
+
 
 class Profile extends React.Component {
   constructor() {
@@ -97,7 +96,7 @@ class Profile extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <div className="container">
             <div className="img">
-              <img src={troll} alt="cute troll 128" />
+              {/* <img src={troll} alt="cute troll 128" /> */}
             </div>
 
             <div className="heading">
