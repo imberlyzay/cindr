@@ -1,12 +1,23 @@
 import React from 'react';
-import troll from './troll.png';
+import { Link } from 'react-router-dom';
 import './Splash.css'
+
 import paperbird from './paper-bird.png'
 import firebase from 'firebase'
 import {firebaseConfig} from './components/Firebase'
 
 firebase.initializeApp(firebaseConfig)
 const provider = new firebase.auth.FacebookAuthProvider()
+
+export const Splash = () => {
+  return (
+    <div className="splash-container">
+      <img src={paperbird} alt='bird in nest'></img>
+      <Link to='/'>Log in</Link>
+      <Link to='/'>Sign Up</Link>
+    </div>
+  );
+};
 
 // const facebookSignin = () => {
 //   firebase.auth().signInWithRedirect(provider);
@@ -49,15 +60,3 @@ const facebookSignin = () => firebase.auth().signInWithPopup(provider).then(func
 
 
 
-
-export const Splash = () => {
-  return (
-    <div className="splash-container">
-      {/* <img src={troll} alt="cute troll"></img> */}
-      <img src={paperbird} alt='bird in nest'></img>
-    {/* <button type='submit' onClick={facebookSignin}>Sign in with FB</button>  */}
-    {/* <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="true"></div> */}
-      {/* <h1>Cindr</h1> */}
-    </div>
-  );
-};

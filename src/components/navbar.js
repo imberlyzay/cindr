@@ -11,7 +11,7 @@ export class Navbar extends React.Component {
             <Link to="/profile">Profile</Link>
             <Link to="/game">Game</Link>
             <Link to="/map">Map</Link>
-            <Link to="/matches">Matches</Link>
+            <Link to="/matches">Comrades</Link>
           </div>
         </nav>
       </div>

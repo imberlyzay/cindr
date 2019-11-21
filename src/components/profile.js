@@ -58,7 +58,7 @@ class Profile extends React.Component {
       <div className="login-form">
         <div className="container">
           <div className="img">
-            <img src={troll} alt="cute troll 128" />
+            {/* <img src={troll} alt="cute troll 128" /> */}
           </div>
 
           <div className="heading">

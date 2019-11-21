@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  box-shadow: 5px 5px 5p 5px #a7a7a7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -9,8 +14,6 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -24,50 +27,50 @@
 /* SPLASH */
 .splash-container {
   display: flex;
-  /* background-color: #282c34; */
   background-color: #282c34;
   min-height: 100vh;
   display: row;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
   align-items: center;
-  justify-content: center;
+  /* justify-content: flex-end; */
   font-size: calc(10px + 2vmin);
-  /* color: white; */
   color :#9c9c9c;
 }
 
+.splash-container img {
+  /* align-self: center; */
+  justify-self: center;
+}
+
+
 /* NAVBAR */
 .nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
+  justify-self: center;
   /* background-color: #667185; */
   /* background-color: #363636; */
   background-color: #282c34;
   padding: 20px;
+  margin: 10px;
   overflow: hidden;
   text-align: center;
 }
 
 /* Style the links inside the navigation bar */
 .nav-bar a {
-  /* text-align: center; */
-  /* justify-content: right; */
   color: white;
   padding: 10px;
   text-decoration: none;
   display: flex;
 }
 
-.nav-bar .nav-links {
-  justify-content: flex-end;
-}
 
 .nav-bar .nav-title {
-  background-color: #d20000;
+  color: black;
+  background-color: white;
+  /* background-color: #a7a7a7; */
+  box-shadow: inset .09em .09em .1em #d20000, inset -.09em -.09em .1em #d20000;
   font-size: 20px;
-  /* display: flex; */
-  /* justify-content: left; */
 }
 
 /* Change the color of links on hover */
@@ -84,10 +87,12 @@
 /* PROFILE */
 .login-form {
   height: 100vh;
+  width: 100%;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color:  #282c34;
 }
 
 .login-form .container {
@@ -106,7 +111,7 @@
 }
 
 .login-form .container .heading h4 {
-  color: #4b8eb2;
+  color: white;
   font-size: 35px;
   text-align: center;
   margin-left: 50px;
@@ -167,9 +172,9 @@
   color: #ffffff;
   font-size: 16px;
   padding: 10px;
-  background-color: #4b8eb2;
+  background-color: #a7a7a7;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   width: 100%;
 }
 
@@ -192,9 +197,9 @@
   color: #ffffff;
   font-size: 16px;
   padding: 10px;
-  background-color: #e54567;
+  background-color: #d20000;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   /* margin-right: 0px; */
   width: 50%;
 }

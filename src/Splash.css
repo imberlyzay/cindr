@@ -1,5 +1,25 @@
+/*
+.splash-container {
+
+  border: solid red;
+
+} */
 
 .splash-container img {
   height: 50%;
   width: 50%;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.splash-container a {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-start;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
