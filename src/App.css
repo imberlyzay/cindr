@@ -37,14 +37,17 @@
   height: 100%;
   width: 100%;
   align-items: center;
-  /* justify-content: flex-end; */
   font-size: calc(10px + 2vmin);
   color :#9c9c9c;
 }
 
 .splash-container img {
-  /* align-self: center; */
   justify-self: center;
+}
+
+.splash-container a:hover {
+  background-color: #414855;
+  color: white;
 }
 
 
@@ -73,15 +76,13 @@
 .nav-bar .nav-title {
   color: black;
   background-color: #a7a7a7;
-  /* background-color: #a7a7a7; */
-  box-shadow: inset .09em .09em .1em white, inset -.09em -.09em .1em white;
+  /* box-shadow: inset .09em .09em .1em white, inset -.09em -.09em .1em white; */
   color: #414855;
   font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .nav-bar a:hover {
-  /* color: rgb(218, 216, 216); */
   background-color: #414855;
   color: white;
 }
@@ -104,9 +105,6 @@
 }
 
 .login-form .container {
-  /* min-width: 400px;
-  min-height: 450px; */
-  /* box-shadow: 0px 0px 10px #cccccc; */
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -126,9 +124,6 @@
   margin-right: 15px;
   margin-bottom: 15px;
   margin-top: 15px;
-  /* border-bottom: 1px solid; */
-  /* padding-bottom: 3px; */
-  /* display: inline-block; */
 }
 
 .login-form .container .form-fields {
@@ -172,7 +167,6 @@
   align-items: center;
   margin-left: 13px;
   margin-right: 13px;
-  /* padding: 13px; */
   margin-bottom: 20px;
 }
 
@@ -208,7 +202,6 @@
   background-color: #d20000;
   border: none;
   border-radius: 4px;
-  /* margin-right: 0px; */
   width: 50%;
 }
 
@@ -282,3 +275,105 @@
 .login-container a:hover {
   color: #414855;
 }
+
+/* SIGNUP FORM */
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 10px;
+  font-size: 20px;
+  /* margin: 10px; */
+}
+
+.signup-container img {
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+.signup-container input {
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+}
+
+.signup-container label {
+  -webkit-transform: rotate(-180deg);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px -30px 15px;
+}
+
+.nav-buttons .single-btn:hover {
+  color: #414855;
+}
+
+/* AGE MENU */
+
+
+.age-menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.down {
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+.over-49 {
+  display: none;
+  position: absolute;
+}
+
+.under-49 {
+  display: none;
+  position: absolute;
+}
+
+.up:hover .over-49 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+  margin-left: -22px;
+  padding: 10px;
+  background-color: black;
+  max-height: 20%;
+  width: 40px;
+  overflow: scroll;
+}
+
+.down:hover .under-49 {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 5px; */
+  margin-left: -20px;
+  padding: 10px;
+  background-color: black;
+  max-height: 20%;
+  width: 40px;
+  overflow: scroll;
+}
+
+.age-menu .age:hover {
+  background-color: #414855;
+}
+
+.dropdown .up:hover .over-49 {
+  color: black;
+  display: block;
+}
+
+.down:hover .over-49 {
+  color: black;
+  display: block;
+}
+

@@ -18,7 +18,7 @@ export const LoginForm = () => {
           Password
           <input type='password' name='password' placeholder="password" />
         </label>
-        <input type='submit' name='submit' className='button' />
+        <input type='submit' value='Submit' className='button' />
       </form>
       <Link to='/signup'>No account? Create one.</Link>
       </div>
